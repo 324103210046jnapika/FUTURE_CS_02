@@ -6,17 +6,17 @@ The objective of this task is to analyze phishing emails and identify common phi
 ---
 
 ## Tools Used
+- Phishing email samples
 - Email Header Analyzer
-- Web Browser
-- Security Awareness Techniques
+- Browser Tools (for checking links and domains)
+- Google Docs / PDF (for documentation)
 
 ---
 
 ## Sample Phishing Email
 
-The following is an example of a phishing email used for analysis.
-
-Subject: Urgent – Verify Your Account Immediately
+From: security-alert@account-verification-support.com  
+Subject: Urgent – Verify Your Account Immediately  
 
 Dear Customer,
 
@@ -37,16 +37,27 @@ Security Team
 ## Phishing Indicators Identified
 
 ### 1. Suspicious Sender Address
-The sender email address does not belong to an official organization domain. Attackers often use fake domains to impersonate legitimate companies.
+The sender email uses a fake domain that does not belong to any official organization.
 
-### 2. Urgent or Threatening Language
-The email creates urgency by warning that the account will be suspended within 24 hours. This tactic pressures users to act quickly without verifying the authenticity.
+---
+
+### 2. Urgent or Fear-Based Language
+The email pressures the user to act quickly by threatening account suspension.
+
+---
 
 ### 3. Suspicious Link
-The link in the email leads to a suspicious domain that does not belong to an official company website. This is commonly used to redirect users to fake login pages.
+The URL provided does not belong to a legitimate website and may redirect to a fake login page.
+
+---
 
 ### 4. Generic Greeting
-The email uses a generic greeting such as "Dear Customer" instead of addressing the recipient by name.
+The email uses "Dear Customer" instead of addressing the user personally.
+
+---
+
+### 5. Fake Domain Name
+The domain used looks similar to real websites but is actually malicious.
 
 ---
 
@@ -54,60 +65,69 @@ The email uses a generic greeting such as "Dear Customer" instead of addressing 
 
 | Email Type | Classification |
 |------|------|
-| Account verification email | Phishing |
+| Account Verification Email | Phishing |
 
-This email contains multiple phishing indicators and is therefore classified as a phishing attempt.
+This email contains multiple phishing indicators and is classified as a phishing attack.
 
 ---
 
 ## Attack Explanation
 
-Phishing attacks rely on social engineering techniques to trick users into revealing sensitive information such as login credentials or financial data.
+Phishing is a type of social engineering attack where attackers trick users into providing sensitive information.
 
-In this attack scenario:
-1. The attacker sends a fake email pretending to be from a legitimate organization.
-2. The email contains a malicious link.
-3. The victim clicks the link and is redirected to a fake login page.
-4. The attacker collects the user's credentials.
+Attack Process:
+1. Attacker sends a fake email pretending to be a trusted organization  
+2. Email includes malicious link  
+3. User clicks link and enters credentials  
+4. Attacker steals data  
 
 ---
-## Evidence (Screenshot)
 
-The screenshot below shows the phishing email used for analysis.
+## Evidence (Screenshot)
 
 ![Phishing Email Screenshot](phishing_email_screenshot.png)
 
 ---
+
 ## Prevention Guidelines
 
 ### For Users
-- Always verify the sender's email address.
-- Avoid clicking suspicious links.
-- Never share passwords or sensitive information through email.
-- Report suspicious emails to the IT department.
+- Verify sender email address  
+- Avoid clicking unknown links  
+- Do not share sensitive information  
+- Report suspicious emails  
 
 ### For Organizations
-- Implement email filtering systems.
-- Enable Multi-Factor Authentication (MFA).
-- Conduct regular phishing awareness training.
-- Monitor suspicious domain activity.
+- Implement email filtering systems  
+- Enable Multi-Factor Authentication (MFA)  
+- Conduct security awareness training  
+- Monitor suspicious activity  
 
 ---
 
 ## Awareness Tips
 
 ### Do's
-- Verify the sender's domain before responding.
-- Hover over links before clicking them.
-- Use official websites for login instead of email links.
+- Check sender domain  
+- Hover over links  
+- Use official websites  
 
 ### Don'ts
-- Do not click links from unknown senders.
-- Do not download suspicious attachments.
-- Do not share personal information through email.
+- Do not click unknown links  
+- Do not download attachments  
+- Do not share personal data  
+
+---
+
+## Analysis Approach
+
+1. Examined sender email domain  
+2. Checked URL structure  
+3. Identified social engineering techniques  
+4. Classified risk level  
 
 ---
 
 ## Conclusion
 
-This task helped in understanding how phishing attacks are performed and how to identify suspicious emails. By recognizing phishing indicators and following security best practices, users and organizations can protect themselves from social engineering attacks.
+This task helped in understanding phishing attacks and how to detect them. By identifying phishing indicators and following security practices, users can prevent such attacks and protect sensitive information.
